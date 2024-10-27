@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Date, DateTime, File, Email etc
+        </title>
+    </head>
+    <body>
+        <form>
+            <h1>Date input</h1>
+            <label for="duedate">Due Date</label>
+            <input type="date" id="duedate" name="duedate" min="2024-10-10" max="2024-10-30">
+
+            <br>
+            <br>
+            <h1>DateTime input</h1>
+            <label for="Submit Time"><span style="color:red">*</span>Submit DateTime </label>
+           <input type="datetime-local" id="submitdt" name="submitdt" min="2024-10-10T15:00" max="2024-12-12T12:00"  size="30" required>
+            
+           <!--
+           duedate=2024-10-22
+           submitdt=2024-10-15T18:00-->
+            <br>
+            <br>
+
+            <h1>Email</h1>
+            <label for="email"> Email :  &nbsp </label><input type="email" id="email" name="email" value="readonly@xyz.com" readonly size="30">
+            <br>
+            <label for="email"> Email d: &nbsp </label><input type="email" id="emaild" name="emaild" value="disabled@xyz.com" disabled>
+            <br>
+            <label for="email2"> Email 2:</label>
+            <input type="text" id="email2" name="email2" placeholder="Iron man"  size="30" maxlength="12">
+            <br> <br>
+
+            <h1> File Upload </h1>
+            <input type="file" id="fileupload" name="fileupload" multiple="true" accept=".csv,.docx, .txt, .png" ><br>
+
+            <br><br>
+
+            <br>
+            <h1>Numberrr</h1>
+            <label for="num"> Number :</label>
+            <input type="number" id="num" name="num"  size="30"><br>
+            <label for="num"> Number 2:</label>
+            <input type="number" id="num2" name="num2" min="10" max="110" step="10"  size="30">
+            <br> <br>
+            <input type="hidden" id="orgid" name="orgid" value="abc100">
+
+            <br>
+            <h1>DataList</h1>
+            <label for="selectedday"> Select A Day:</label>
+            <input list="weekdays" id="selectedday" name="selectedday">
+            <input list="weekends" id="selectedday2" name="selectedday2">
+            
+            <datalist id="weekdays">
+                <option value="Monday"> Monday</option>
+                <option value="Tuesday"> Tuesday</option>
+                <option value="wednesday"> Wednesday</option>
+                <option value="thursday"> Thursday</option>
+                <option value="friday"> Friday</option>
+            </datalist>
+
+            <datalist id="weekends">
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </datalist>
+
+
+            <br> <br>
+            <input type="submit">
+            <!--
+            https://127.0.0.1:5500/html/forms/dateemailfile.html?duedate=2024-10-15&submitdt=2024-10-15T23%3A46&email=vitap%40yoll.io&email2=vitap&fileupload=&num=1&num2=10&orgid=abc100
+
+
+            https://127.0.0.1:5500/html/forms/dateemailfile.html?duedate=&submitdt=&email=readonly%40xyz.com&email2=John&fileupload=&num=&num2=&orgid=abc100
+            -->
+        </form>
+    </body>
+</html>

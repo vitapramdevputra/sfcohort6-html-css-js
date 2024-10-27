@@ -1,0 +1,11 @@
+h1 {color:rgb(50, 50, 118)}
+h2 { color:rgb(70, 117, 118)}
+h3 { color:rgb(110, 116, 161)}
+
+/* # is used for id */
+#heading1 {color:blueviolet; text-align: center;}
+
+/* .is used for class */
+.head1 {color:rgb(146, 196, 96); text-align: center;}
+
+* { font-weight: 500;}
