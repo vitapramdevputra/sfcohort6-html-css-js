@@ -1,0 +1,26 @@
+<html>
+    <head>
+        Inline/Internal JS Demo
+
+        <script>
+            //comments
+            //creating a function named inputClick
+            function inputClick(){
+                //code
+                alert('Hello Hello Hello Everybody');
+            }
+        </script>
+        <script src="external.js"></script>
+    </head>
+    <body>
+        <h1> Understanding INLINE JS</h1>
+        <!-- INLINE JS -->
+        <input type="button" value="CLICK HERE" onclick="alert('hello hello'); alert('good good good');"> 
+
+        <h1> Understanding INTERNAL JS</h1>
+        <input type="button" value="CLICK HERE ALSO" onclick="inputClick()">
+
+        <h1> Understanding EXTERNAL JS</h1>
+        <input type="button" value="CLICK HERE TOO EXT" onclick="buttonClick()">
+    </body>
+</html>
