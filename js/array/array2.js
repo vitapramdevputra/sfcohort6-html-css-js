@@ -125,6 +125,10 @@ function greet(name) {
 }
 
 greet('Plus');
+greet(99);
+greet(array9)
+
+
 
 function welcome(name) {
     let s = 'Welcome ' + name + ', to JavaScript Session';
@@ -154,7 +158,7 @@ function greaterThan5(num) {
 let array51 = [-2, 4, 3, 5, 15, 10, 11, 0, 1, 7];
 //find the values from this array which are greater than 5.
 let a = array51.find(greaterThan5);//find(functionName)
-console.log('a:', a);
+console.log('a:', a); //
 
 let b = array51.find(greaterThan5);
 console.log('b:', b);
