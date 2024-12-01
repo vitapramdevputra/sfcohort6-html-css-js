@@ -105,11 +105,22 @@ function triple(item) {
     return item * 3;
 }
 
+let xy1 = triple(6);
+console.log('xy1: ', xy1);//what will this return?
+
 //create an array by multiplying each element with 3
 
 let num4 = [2, 4, 6, 12, 15, 8, 7, 9];
 
 let newArray3 = num4.map(triple);
+//2 -> triple(2) => 6
+//4 -> triple(4) => 12
+//6 => 18
+//12 => 36
+//15 => 45
+//8 => 24
+//7 => 21
+//9 => 27
 console.log('num4:', num4);
 console.log('newArray3:', newArray3);
 
@@ -151,6 +162,9 @@ let contacts = [
     }
 ];
 console.log(contacts);
+
+console.log(contacts[2]);
+console.log(contacts[2].AccName);
 
 //create a new array with JUST names from contacts
 function getNames(item) {

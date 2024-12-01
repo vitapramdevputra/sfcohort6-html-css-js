@@ -95,3 +95,6 @@ console.log('num3:', num3);
 
 num3 %= 10; //25%10 => 5
 console.log('num3:', num3);
+
+num3 %= 3;
+console.log('num3 => ', num3);
