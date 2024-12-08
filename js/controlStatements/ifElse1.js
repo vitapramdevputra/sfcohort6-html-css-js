@@ -138,8 +138,12 @@ console.log('b3:', b3);
 //amount > 500 => 15% 
 
 let amount1 = prompt('Amount?', '');
+//if we give minus amount then currently it is priting 'No Discount for you'.
+//it should Print "Amount must be more than zero. Invalid amount."
 
-if (amount1 < 100) {
+if (amount1 <= 0) {
+    console.log("Amount must be more than zero. Invalid amount.");
+} else if (amount1 > 0 && amount1 < 100) {
     console.log('No Discount for you');
 } else if (amount1 > 100 && amount1 <= 200) {
     console.log('5% discount. So final amount is  ', (amount1 - amount1 * 0.05));
