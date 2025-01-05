@@ -4,4 +4,9 @@ function redcolor() {
     document.body.innerHTML = '<h1>DOM is easy.<h1>';
 }
 
-setTimeout(redcolor, 3000);
+function bgcolor() {
+    document.body.style.background = 'black';
+}
+
+setTimeout(redcolor, 4000);//4000 milliseconds
+setTimeout(bgcolor, 3000);
